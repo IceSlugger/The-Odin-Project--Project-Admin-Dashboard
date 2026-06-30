@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cozy Cafe — Bakery Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
 
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="mdi mdi-coffee brand-icon"></span>
+        <h1>The Cozy Cafe</h1>
+      </div>
+
+      <nav class="nav-main">
+        <ul>
+          <li><span class="mdi mdi-home"></span> Home</li>
+          <li><span class="mdi mdi-notebook-outline"></span> Menu</li>
+          <li><span class="mdi mdi-clipboard-text-outline"></span> Orders</li>
+          <li><span class="mdi mdi-calendar-check"></span> Reservations</li>
+          <li><span class="mdi mdi-package-variant-closed"></span> Inventory</li>
+          <li><span class="mdi mdi-account-group"></span> Staff</li>
+        </ul>
+      </nav>
+
+      <nav class="nav-settings">
+        <ul>
+          <li><span class="mdi mdi-cog"></span> Settings</li>
+          <li><span class="mdi mdi-help-box"></span> Support</li>
+          <li><span class="mdi mdi-shield-check"></span> Privacy</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="header-top">
+        <div class="search-bar">
+          <span class="mdi mdi-magnify search-icon"></span>
+          <input type="search" name="search" id="search" placeholder="Search recipes, orders...">
+        </div>
+        <div class="header-actions">
+          <span class="mdi mdi-bell-ring-outline bell-icon"></span>
+          <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Lily" alt="Avatar" class="avatar-sm">
+          <span class="user-name-small">Lily Baker</span>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="greeting">
+          <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Lily" alt="Avatar" class="avatar-lg">
+          <div class="greeting-text">
+            <p class="greeting-hi">Good morning,</p>
+            <p class="greeting-user">Lily Baker (@lilybakes)</p>
+          </div>
+        </div>
+        <div class="header-buttons">
+          <button type="button">New Recipe</button>
+          <button type="button">Place Order</button>
+          <button type="button">Share</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+      <!-- Daily Specials -->
+      <section class="projects-section">
+        <h2>Daily Specials</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Sourdough Loaves</h3>
+              <p>
+                <span class="mdi mdi-checkbox-blank-outline"></span> Bread flour &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Starter &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Sea salt &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Filtered water
+              </p>
+            </div>
+            <div class="card-actions">
+              <span class="mdi mdi-heart-outline" title="Favorite"></span>
+              <span class="mdi mdi-eye-plus-outline" title="View"></span>
+              <span class="mdi mdi-baguette" title="Bake"></span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Matcha Lattes</h3>
+              <p>
+                <span class="mdi mdi-checkbox-blank-outline"></span> Ceremonial matcha &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Oat milk &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Vanilla syrup &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Honey drizzle
+              </p>
+            </div>
+            <div class="card-actions">
+              <span class="mdi mdi-heart-outline" title="Favorite"></span>
+              <span class="mdi mdi-eye-plus-outline" title="View"></span>
+              <span class="mdi mdi-coffee" title="Brew"></span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Butter Croissants</h3>
+              <p>
+                <span class="mdi mdi-checkbox-blank-outline"></span> French butter &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Bread flour &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Yeast &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Egg wash
+              </p>
+            </div>
+            <div class="card-actions">
+              <span class="mdi mdi-heart-outline" title="Favorite"></span>
+              <span class="mdi mdi-eye-plus-outline" title="View"></span>
+              <span class="mdi mdi-baguette" title="Bake"></span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Cinnamon Rolls</h3>
+              <p>
+                <span class="mdi mdi-checkbox-blank-outline"></span> All-purpose flour &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Brown sugar &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Ceylon cinnamon &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Cream cheese frosting
+              </p>
+            </div>
+            <div class="card-actions">
+              <span class="mdi mdi-heart-outline" title="Favorite"></span>
+              <span class="mdi mdi-eye-plus-outline" title="View"></span>
+              <span class="mdi mdi-baguette" title="Bake"></span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Avocado Toast</h3>
+              <p>
+                <span class="mdi mdi-checkbox-blank-outline"></span> Sourdough slice &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Ripe avocado &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Cherry tomatoes &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Everything seasoning
+              </p>
+            </div>
+            <div class="card-actions">
+              <span class="mdi mdi-heart-outline" title="Favorite"></span>
+              <span class="mdi mdi-eye-plus-outline" title="View"></span>
+              <span class="mdi mdi-food" title="Serve"></span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Lavender Honey Cake</h3>
+              <p>
+                <span class="mdi mdi-checkbox-blank-outline"></span> Cake flour &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Dried lavender &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Wildflower honey &middot;
+                <span class="mdi mdi-checkbox-blank-outline"></span> Mascarpone
+              </p>
+            </div>
+            <div class="card-actions">
+              <span class="mdi mdi-heart-outline" title="Favorite"></span>
+              <span class="mdi mdi-eye-plus-outline" title="View"></span>
+              <span class="mdi mdi-cake-variant" title="Bake"></span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Side Panel -->
+      <aside class="side-panel">
+
+        <!-- Supplier Notices -->
+        <section class="announcements">
+          <h2>Supplier Notices</h2>
+          <div class="announcements-card">
+            <div class="announcement-item">
+              <h4>Flour shipment arriving</h4>
+              <p>Organic bread flour restock — delivery expected at 9:00 AM tomorrow. Clear shelf space in dry storage.</p>
+            </div>
+            <hr>
+            <div class="announcement-item">
+              <h4>Dairy delivery delay</h4>
+              <p>Butter and cream shipment pushed to Friday. Use reserve stock for today's croissant batch.</p>
+            </div>
+            <hr>
+            <div class="announcement-item">
+              <h4>New matcha supplier</h4>
+              <p>Ceremonial-grade matcha samples arriving from Uji, Kyoto. Schedule a tasting with the barista team.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Top Sellers -->
+        <section class="trending">
+          <h2>Top Sellers</h2>
+          <div class="trending-card">
+            <div class="trending-item">
+              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=MaplePecan" alt="Avatar">
+              <div>
+                <p class="trending-handle">Maple Pecan Danish</p>
+                <p class="trending-project">42 sold today</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=MatchaLatte" alt="Avatar">
+              <div>
+                <p class="trending-handle">Iced Matcha Latte</p>
+                <p class="trending-project">38 sold today</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Sourdough" alt="Avatar">
+              <div>
+                <p class="trending-handle">Country Sourdough</p>
+                <p class="trending-project">31 sold today</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img src="https://api.dicebear.com/7.x/notionists/svg?seed=CinnamonRoll" alt="Avatar">
+              <div>
+                <p class="trending-handle">Cinnamon Roll</p>
+                <p class="trending-project">27 sold today</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </aside>
+    </main>
+
+  </div>
+</body>
+</html>
